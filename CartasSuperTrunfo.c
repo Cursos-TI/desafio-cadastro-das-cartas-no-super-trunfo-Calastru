@@ -1,77 +1,75 @@
 #include <stdio.h>
 
 int main(){
-    char V_estado1, V_estado2, V_cod_carta1[4], V_nome_cidade1[50], V_cod_carta2[4], V_nome_cidade2[50];
-    int V_populacao1, V_pont_turisticos1, V_populacao2, V_pont_turisticos2;
-    float V_area1, V_pib1, V_area2, V_pib2;
+    char V_estado, V_cod_carta[4], V_nome_cidade[50];
+    int V_populacao, V_pont_turisticos;
+    float V_area, V_pib;
 
-    //carta 1
-        printf("Carta 1: \n");
+    //Carta 1
+        printf("Carta 1: ");
         //Estado
-        printf(" Digite o estado: ");
-        scanf("%c", &V_estado1);
+        printf("\n Digite o estado: ");
+        scanf("%c", &V_estado);
         //Codigo
         printf(" Digite o codigo: ");
-        scanf("%s", V_cod_carta1);
+        scanf("%s", V_cod_carta);
         //Nome da Cidade
         printf(" Digite o nome da cidade: ");
-        scanf("%s", V_nome_cidade1);
+        scanf("%s", V_nome_cidade);
         //População
         printf(" Digite a população: ");
-        scanf("%d", &V_populacao1);
+        scanf("%i", &V_populacao);
         //Area
         printf(" Digite a area: ");
-        scanf("%f", &V_area1);
+        scanf("%f", &V_area);
         //PIB
         printf(" Digite o PIB: ");
-        scanf("%f", &V_pib1);
+        scanf("%f", &V_pib);
         //Pontos Turisticos
         printf(" Digite o numerode pontos turisticos: ");
-        scanf("%d", &V_pont_turisticos1);
+        scanf("%i", &V_pont_turisticos);
 
-    //carta 2
-        printf("Carta 2: \n");
-        //Estado
-        printf(" Digite o estado: ");
-        scanf("%c", &V_estado2);
-        //Codigo
-        printf(" Digite o codigo: ");
-        scanf("%s", V_cod_carta2);
-        //Nome da Cidade
-        printf(" Digite o nome da cidade:");
-        scanf("%s", V_nome_cidade2);
-        //População
-        printf(" Digite a população: ");
-        scanf("%d", &V_populacao2);
-        //Area
-        printf(" Digite a area: ");
-        scanf("%f", &V_area2);
-        //PIB
-        printf(" Digite o PIB: ");
-        scanf("%f", &V_pib2);
-        //Pontos Turisticos
-        printf(" Digite o numerode pontos turisticos: ");
-        scanf("%d", &V_pont_turisticos2);
-    
-    //Carta 1
     printf("Carta 1:\n");
-    printf("Estado: %c\n", V_estado1);
-    printf("Codigo: %s\n", V_cod_carta1);
-    printf("Nome da Cidade: %s\n", V_nome_cidade1);
-    printf("População: %d\n", V_populacao1);
-    printf("Area: %.2f Km²\n", V_area1);
-    printf("PIB: %.2f bilhões de reais\n", V_pib1);
-    printf("Numero de Pontos Turisticos: %d\n", V_pont_turisticos1);
+    printf("Estado: %c\n", V_estado);
+    printf("Codigo: %s\n", V_cod_carta);
+    printf("Nome da Cidade: %s\n", V_nome_cidade);
+    printf("População: %i\n", V_populacao);
+    printf("Area: %.2f Km²\n", V_area);
+    printf("PIB: %.2f bilhões de reais\n", V_pib);
+    printf("Numero de Pontos Turisticos: %i\n", &V_pont_turisticos);
 
     //Carta 2
+        printf("Carta 2: ");
+        //Estado
+        printf("\n Digite o estado: ");
+        scanf("%c", &V_estado);
+        //Codigo
+        printf(" Digite o codigo: ");
+        scanf("%s", V_cod_carta);
+        //Nome da Cidade
+        printf(" Digite o nome da cidade:");
+        scanf("%s", V_nome_cidade);
+        //População
+        printf(" Digite a população: ");
+        scanf("%i", &V_populacao);
+        //Area
+        printf(" Digite a area: ");
+        scanf("%f", &V_area);
+        //PIB
+        printf(" Digite o PIB: ");
+        scanf("%f", &V_pib);
+        //Pontos Turisticos
+        printf(" Digite o numerode pontos turisticos: ");
+        scanf("%i", &V_pont_turisticos);
+
     printf("Carta 2:\n");
-    printf("Estado: %c\n", V_estado2);
-    printf("Codigo: %s\n", V_cod_carta2);
-    printf("Nome da Cidade: %s\n", V_nome_cidade2);
-    printf("População: %d\n", V_populacao2);
-    printf("Area: %.2f Km²\n", V_area2);
-    printf("PIB: %.2f bilhões de reais\n", V_pib2);
-    printf("Numero de Pontos Turisticos: %d\n", V_pont_turisticos2);
+    printf("Estado: %c\n", V_estado);
+    printf("Codigo: %s\n", V_cod_carta);
+    printf("Nome da Cidade: %s\n", V_nome_cidade);
+    printf("População: %i\n", V_populacao);
+    printf("Area: %.2f Km²\n", V_area);
+    printf("PIB: %.2f bilhões de reais\n", V_pib);
+    printf("Numero de Pontos Turisticos: %i\n", V_pont_turisticos);
 
     return 0;
 }
